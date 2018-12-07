@@ -1,0 +1,24 @@
+body {
+    background: lightgray;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    position: absolute;
+  }
+
+  /* First Frame */
+  #city1, 
+  #city2,
+  #geolocation {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  /* Last Frame */
+  #city1:target,
+  #city2:target, 
+  #geolocation:target {
+    z-index: 1; 
+    opacity: 1;
+  }
